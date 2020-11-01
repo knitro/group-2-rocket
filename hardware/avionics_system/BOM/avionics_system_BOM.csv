@@ -1,0 +1,47 @@
+Source:,,,,,,,
+Date:,24/06/2020 21:35,,,,,,
+Tool:,Eeschema (5.1.5)-3,,,,,,
+Generator:,,,,,,,
+Component Count:,,,,,,,
+Ref,Value,Cmp name,Footprint,Description,Vendor,,Qnty
+"C1, C2, C3, C4, C6, C8, C11, C12, C14, C18, C19, C22, C23, C24, C26, C27, C28, C29, C30, ",100n,C,Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,Unpolarized capacitor,Digi-Key,399-1100-1-ND,20
+"C5, C16, C17, C21, ",10u,C,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,Unpolarized capacitor,Digi-Key,399-4925-1-ND,4
+"C7, C10, ",2.2u,C,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,Unpolarized capacitor,Digi-Key,311-1463-1-ND,2
+"C9, ",22uf,C,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,Unpolarized capacitor,Digi-Key,399-4696-1-ND,1
+"C13, ",470u,C,Capacitor_SMD:CP_Elec_10x10.5,Unpolarized capacitor,Digi-Key,493-6386-1-ND,1
+"C15, C20, C25, C31, ",10n,C,Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,Unpolarized capacitor,Digi-Key,399-7842-1-ND,4
+"D1, ",1N5819,1N5819,Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal,"40V 1A Schottky Barrier Rectifier Diode, DO-41",Digi-Key,497-6610-1-ND,1
+"D2, D3, ",LED,LED,LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,Light emitting diode,Digi-Key,475-1415-1-ND,2
+"F1, ",1A,Fuse,Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder,Fuse,Digi-Key,SF-1206S100-2CT-ND,3
+"FB1, FB2, FB5, ",Ferrite_Bead_Small,Ferrite_Bead_Small,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,"Ferrite bead, small symbol",Digi-Key,587-1903-1-ND,3
+"J1, ",Conn_01x01_Female,Conn_01x01_Female,TestPoint:TestPoint_Pad_D3.0mm,"Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)",Digi-Key,-,1
+"J2, ",Conn_01x01_Female,Conn_01x01_Female,TestPoint:TestPoint_Pad_3.0x3.0mm,"Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)",Digi-Key,-,1
+"J3, ",Conn_01x01_Female,Conn_01x01_Female,TestPoint:TestPoint_Pad_D4.0mm,"Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)",Digi-Key,-,1
+"J4, ",Conn_01x01_Female,Conn_01x01_Female,TestPoint:TestPoint_Pad_4.0x4.0mm,"Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)",Digi-Key,-,1
+"J5, J13, ",Conn_01x02_Female,Conn_01x02_Female,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",Digi-Key,952-2262-ND,2
+"J6, ",USB_C_Receptacle_USB2.0,USB_C_Receptacle_USB2.0,Connector_USB:USB_C_Receptacle_GCT_USB4085,USB 2.0-only Type-C Receptacle connector,Digi-Key,2073-USB4085-GF-ACT-ND,1
+"J7, J11, ",Conn_Coaxial,Conn_Coaxial,Connector_Coaxial:U.FL_Molex_MCRF_73412-0110_Vertical,"coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)",Digi-Key,WM5587CT-ND,2
+"J8, ",ARM_JTAG,Conn_ARM_JTAG_SWD_10,Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical,"Cortex Debug Connector, standard ARM Cortex-M SWD and JTAG interface",Digi-Key,1175-1627-ND,1
+"J9, J12, ",Conn_01x03_Male,Conn_01x03_Male,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Digi-Key,732-5316-ND,2
+"J10, J14, ",Conn_01x02_Male,Conn_01x02_Male,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",Digi-Key,952-2262-ND,2
+"J15, J16, J17, ",Conn_01x02_Female,Conn_01x02_Female,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal","Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",Digi-Key,277-1247-ND,3
+"J18, ",Micro_SD_Card_Det,Micro_SD_Card_Det,Connector_Card:microSD_HC_Molex_104031-0811,Micro SD Card Socket with card detection pins,Digi-Key,WM6357CT-ND,1
+"L1, ",27n,L,Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder,Inductor,Digi-Key,712-1439-1-ND,1
+"Q1, Q2, Q3, ",IRF8721PBF-1,IRF8721PBF-1,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,"14A Id, 30V Vds, HEXFET N-Channel MOSFET, SO-8",Digi-Key,IRF8721TRPBFCT-ND,3
+"R1, R2, ",2.2k,R,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,Resistor,Digi-Key,P2.2KGCT-ND,2
+"R3, ",300k,R,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,Resistor,Digi-Key,RR08P300KDCT-ND,1
+"R4, ",100k,R,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,Resistor,Digi-Key,RR08P100KDCT-ND,1
+"R5, R6, R9, R10, R15, ",10k,R,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,Resistor,Digi-Key,P10KGCT-ND,5
+"R11, R12, ",5.1k,R,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,Resistor,Digi-Key,311-5.10KHRCT-ND,2
+"R13, R14, ",4.7k,R,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,Resistor,Digi-Key,RR08P4.7KDCT-ND,2
+"R16, R17, R18, ",470,R,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,Resistor,Digi-Key,311-470GRCT-ND,3
+"R19, ",10,R,Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,Resistor,Digi-Key,311-10.0HRCT-ND,1
+"SW1, ",SW_Push,SW_Push,Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx,"Push button switch, generic, two pins",Digi-Key,SW402-ND,1
+"TP1, TP2, TP3, TP4, TP5, TP6, TP7, TP8, TP9, TP10, TP11, TP12, TP13, ",TestPoint,TestPoint,TestPoint:TestPoint_Pad_D2.0mm,test point,Digi-Key,-,13
+"U1, ",AMS1117-3.3,AMS1117-3.3,Package_TO_SOT_SMD:SOT-223-3_TabPin2,"1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223",Digi-Key,AZ1117EH-3.3TRG1DICT-ND,1
+"U2, ",STM32F405RGTx,STM32F405RGTx,Package_QFP:LQFP-64_10x10mm_P0.5mm,"ARM Cortex-M4 MCU, 1024KB flash, 128KB RAM, 168MHz, 1.8-3.6V, 51 GPIO, LQFP-64",Digi-Key,497-11767-ND,1
+"U3, ",AMS1117-5.0,AMS1117-5.0,Package_TO_SOT_SMD:SOT-223-3_TabPin2,"1A Low Dropout regulator, positive, 5.0V fixed output, SOT-223",Digi-Key,AZ1117EH-5.0TRG1DICT-ND,1
+"U4, ",NEO-M8N,NEO-M8N,RF_GPS:ublox_NEO,"GNSS Module NEO M8, VCC 2.7V to 3.6V",Digi-Key,672-NEO-M8N-0CT-ND,1
+"U5, ",LSM9DS1,LSM9DS1,Package_LGA:LGA-24L_3x3.5mm_P0.43mm,I2C SPI 9 axis IMU accelerometer gyroscope magnetometer,Digi-Key,497-14946-1-ND,1
+"U6, ",RFM95W-915S2,RFM95W-915S2,RF_Module:HOPERF_RFM9XW_SMD,"Low power long range transceiver module, SPI and parallel interface, 915 MHz, spreading factor 6 to12",Digi-Key,RFM95W-915S2-ND,1
+"U7, ",BMP280,BMP280,Package_LGA:Bosch_LGA-8_2x2.5mm_P0.65mm_ClockwisePinNumbering,"Absolute Barometric Pressure Sensor, LGA-8",Digi-Key,828-1064-1-ND,2

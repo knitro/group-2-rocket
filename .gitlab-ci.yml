@@ -1,0 +1,112 @@
+stages:
+ - Dependency-Scan
+ - Lint
+ - Build
+ - Test
+ - Deploy
+
+#/////////////////////
+# Dependencies
+#/////////////////////
+
+dependency-scan:
+  stage: Dependency-Scan
+  tags:
+    - docker
+  image: python:3.5
+  script:
+    - pip install -U platformio
+    - platformio update
+    - platformio project --help
+    - exit 0
+
+#/////////////////////
+# Lint
+#/////////////////////
+
+codelint:
+  stage: Lint
+  tags:
+    - docker
+  image: python:3.5
+  script:
+    - pip install -U platformio
+    - cd firmware/avionics_system
+    - platformio check
+#    - gcc -Wall firmware/avionics_system/src/main.cpp
+    - exit 0
+
+markdownlint:
+  stage: Lint
+  tags:
+    - docker
+  image: pipelinecomponents/markdownlint:latest
+  script:
+    - mdl --style all --warnings --rules .
+  allow_failure: false
+
+#/////////////////////
+# Build
+#/////////////////////
+
+build:
+  stage: Build
+  tags:
+    - docker
+  image: python:3.5
+  script:
+#    - g++ -o firmware/avionics_system/src/main.cpp firmware/avionics_system/main.exe
+    - pip install -U platformio
+    - cd firmware/avionics_system
+    - platformio lib -e cicd install
+    # - pio run -e cicd #Main must not exist
+    - pio run -e hardware #Main must not exist
+#    - pio run -e native #Requires Main
+    - exit 0
+
+#/////////////////////
+# Tests
+#/////////////////////
+
+test-drc:
+  stage: Test
+  tags:
+    - drc
+  image: productize/kicad-automation-scripts:latest
+  script:
+    - python -m kicad-automation.pcbnew_automation.run_drc hardware/avionics_system/avionics_system.kicad_pcb output
+  allow_failure: true
+
+# Currently not working due to parameters that we don't have yet (due to kicads not fully completed)
+#test-erc:
+#  stage: Test
+#  tags:
+#    - docker
+#  image: productize/kicad-automation-scripts:latest
+#  script:
+#    - python -m kicad-automation.eeschema.schematic run_erc hardware/avionics_system/avionics_system.sch output pdf all-pages True
+#  allow_failure: true
+
+
+unittest:
+  stage: Test
+  tags:
+    - docker
+  image: python:3.5
+  script:
+    - pip install -U platformio
+    - cd firmware/avionics_system
+    - platformio test -e native
+    - exit 0
+
+#/////////////////////
+# Deploy
+#/////////////////////
+
+# What needs to go in here?
+deploy:
+  stage: Deploy
+  tags:
+    - shell
+  script:
+    - exit 0
